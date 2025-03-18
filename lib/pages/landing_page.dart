@@ -8,6 +8,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter/material.dart';
 
 import 'package:news_app_/pages/home.dart';
+import 'package:news_app_/pages/login_page.dart';
 
 class LandingPage extends StatefulWidget {
   const LandingPage({super.key});
@@ -78,7 +79,7 @@ class _LandingPageState extends State<LandingPage> {
                   ),
                 ),
                 floatingActionButton: FloatingActionButton(onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => Home()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => LoginPage()));
                 },backgroundColor: Colors.blue,
                 child: Icon(Icons.arrow_forward_ios),
                 ),
